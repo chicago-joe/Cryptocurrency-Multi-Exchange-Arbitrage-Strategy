@@ -6,6 +6,13 @@
     </profile>
   </component>
   <component name="VcsDirectoryMappings">
+<<<<<<< HEAD
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+=======
+    <mapping directory="$PROJECT_DIR$/repos/catalystLib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/ccxtLib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/ccxtLib/build/ccxt.wiki" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/repos/peregrineLib" vcs="Git" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
   </component>
 </project>

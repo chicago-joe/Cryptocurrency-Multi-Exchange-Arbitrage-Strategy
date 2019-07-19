@@ -1,7 +1,455 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="58fe8aa5-624d-45fa-a130-ff5c250883bf" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="58fe8aa5-624d-45fa-a130-ff5c250883bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/html/basic-cors-proxy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/html/basic-inheritance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/html/basic-poller.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/html/basic-rate-limiting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/html/basic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/arbitrage-pairs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/balances.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/basic-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/bcc-vs-bch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/binance-fetch-ohlcv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/binance-server-time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/bitfinex-fetch-trades.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/bitfinex2-fetch-trades.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/bittrex-balance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/bittrex-fetch-closed-orders-history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/builtin-rate-limiting-rest-poller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/bypass-cloudflare.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/cors-proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/create-order-handle-errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/create-order-with-retry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/credentials.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/cryptopia-fetch-order-books.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/custom-proxy-url.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/env-variables.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/error-handling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/exchange-capabilities.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/exchanges-by-volume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/exchanges.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-all-tickers-to-files.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-create-deposit-address.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-from-many-exchanges-simultaneously.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-ohlcv-cex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-okex-futures.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-orders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-ticker-from-multiple-exchanges.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/fetch-ticker-where-available.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/gdax-fetch-trades-pagination.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/hitbtc2-withdraw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/huobipro-market-buy-sell-fetch-trading-limits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/instantiate-all-at-once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/instantiate-all-from-json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/live-orderbook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/live-ticker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/live-tickers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/load-all-symbols-at-once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/load-all-tickers-at-once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/looping-over-all-symbols-of-specific-exchanges.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/looping-over-specific-symbols-of-all-exchanges.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/market-status-and-currency-status.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/okex-fetch-ohlcv-since-limit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/order-book-extra-level-depth-param.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/poloniex-limits-amount-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/proxy-round-robin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/search-all-exchanges.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/symbols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/theocean1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/js/tickers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/arbitrage-pairs.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/basic-error-handling.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/binance-cancel-order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/binance-fetch-ticker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/binance-fetch-tickers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/bitfinex2-fetch-ohlcv-since-limit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/bitfinex2-fetch-ohlcv.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/bitfinex2-fetch-trades-since.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/bitmex-create-order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/built-in-rate-limiting-poller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/cli.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/cobinhood-fetch-balance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/coinbasepro-fetch-ticker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/coinbasepro-sandbox-fetch-ticker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/error-handling-message.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/fetch-order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/gdax-fetch-ticker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/gdax-sandbox-fetch-ticker.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/huobi-fetch-balance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/indodax-fetch-balance-create-order-cancel-order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/kraken-query-ledgers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/kucoin-implicit-inner-transfer-v1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/load-all-at-once.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/order-book-level-depth-extra-param.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/react-eventloop-with-rate-limiting.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/symbols.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/trading-view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/php/vaultoro-fetch-balance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/examples/py/async-tickers-from-many-exchanges-at-once.py" beforeDir="false" afterPath="$PROJECT_DIR$/repos/ccxtLib/examples/py/async-tickers-from-many-exchanges-at-once.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/_1btcxe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/acx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/allcoin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/anxpro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/Exchange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/errorHierarchy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/crypto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/encode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/generic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/orders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/platform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/string.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/throttle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/base/functions/type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bcex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bequant.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bibox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bigone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/binance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/binanceje.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bit2c.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitbank.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitbay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitfinex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitfinex2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitflyer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitforex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bithumb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitkk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitlish.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitmarket.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitmex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitso.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitstamp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitstamp1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bittrex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bitz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bl3p.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bleutrade.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/braziliex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btcalpha.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btcbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btcchina.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btcexchange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btcmarkets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btctradeim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btctradeua.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/btcturk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/buda.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/bxinth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/cex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/chbtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/chilebit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/cobinhood.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinbase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinbaseprime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinbasepro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coincheck.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinegg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinexchange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinfalcon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinfloor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coingi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinmarketcap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinmate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinnest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coinspot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/cointiger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coolcoin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/coss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/crex24.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/crypton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/deribit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/dsx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/dx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/ethfinex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/exmo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/exx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/fcoin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/fcoinjp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/flowbtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/foxbit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/fybse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/gateio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/gdax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/gemini.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/hadax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/hitbtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/hitbtc2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/huobipro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/huobiru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/ice3x.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/independentreserve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/indodax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/itbit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/kkex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/kraken.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/kucoin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/kucoin2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/kuna.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/lakebtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/lbank.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/liqui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/liquid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/livecoin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/luno.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/lykke.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/mandala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/mercado.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/mixcoins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/negociecoins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/nova.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/oceanex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/okcoincny.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/okcoinusd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/okex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/okex3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/paymium.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/poloniex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/rightbtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/southxchange.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/crypto-js/crypto-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/fetch-ponyfill/fetch-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-fetch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/NodeRSA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/asn1/ber/errors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/asn1/ber/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/asn1/ber/reader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/asn1/ber/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/asn1/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/encryptEngines/js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/formats/components.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/formats/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/formats/pkcs1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/formats/pkcs8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/libs/jsbn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/libs/rsa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/schemes/pkcs1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/schemes/schemes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/node-rsa/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/qs/formats.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/qs/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/qs/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/qs/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/static_dependencies/qs/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/stronghold.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/surbitcoin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/.eslintrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.currency.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchBalance.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchClosedOrders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchCurrencies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchDeposits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchFundingFees.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchL2OrderBook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchLedger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchMarkets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchMyTrades.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchOHLCV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchOpenOrders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchOrderBook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchOrderBooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchOrders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchStatus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchTicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchTickers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchTrades.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchTradingFees.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchTransactions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.fetchWithdrawals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.ledgerItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.market.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.ohlcv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.order.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.orderbook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.ticker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.trade.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/test.transaction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/Exchange/tmp.test.fetchOHLCV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/.eslintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/functions/test.datetime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/functions/test.generic.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/functions/test.number.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/functions/test.time.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/functions/test.type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/base/test.base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/errors/test.InsufficientFunds.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/errors/test.InvalidNonce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/errors/test.InvalidOrder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/errors/test.OrderNotFound.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/test/test.timeout_hang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/theocean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/therock.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/tidebit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/tidex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/upbit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/vaultoro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/vbtc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/virwox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/xbtce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/yobit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/zaif.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/js/zb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/repos/ccxtLib/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/repos/ccxtLib/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/Exchange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/_1btcxe.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/acx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/allcoin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/anxpro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bcex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bequant.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bibox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bigone.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/binance.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/binanceje.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bit2c.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitbank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitbay.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitfinex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitfinex2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitflyer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitforex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bithumb.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitkk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitlish.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitmarket.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitmex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitso.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitstamp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitstamp1.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bittrex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bitz.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bl3p.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bleutrade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/braziliex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btcalpha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btcbox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btcchina.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btcexchange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btcmarkets.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btctradeim.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btctradeua.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/btcturk.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/buda.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/bxinth.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/cex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/chbtc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/chilebit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/cobinhood.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinbase.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinbaseprime.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinbasepro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coincheck.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinegg.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinexchange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinfalcon.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinfloor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coingi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinmarketcap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinmate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinnest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinone.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coinspot.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/cointiger.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coolcoin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/coss.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/crex24.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/crypton.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/deribit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/dsx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/dx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/errors.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/ethfinex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/exmo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/exx.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/fcoin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/fcoinjp.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/flowbtc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/foxbit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/fybse.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/gateio.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/gdax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/gemini.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/hadax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/hitbtc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/hitbtc2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/huobi.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/huobicny.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/huobipro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/huobiru.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/ice3x.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/independentreserve.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/indodax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/itbit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/kkex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/kraken.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/kucoin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/kucoin2.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/kuna.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/lakebtc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/lbank.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/liqui.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/liquid.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/livecoin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/luno.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/lykke.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/mandala.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/mercado.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/mixcoins.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/negociecoins.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/nova.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/oceanex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/okcoincny.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/okcoinusd.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/okex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/okex3.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/paymium.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/poloniex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/rightbtc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/southxchange.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/static_dependencies/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/stronghold.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/surbitcoin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/test/ExchangeTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/test/bootstrap.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/test/decimal_to_precision.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/test/syntax.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/test/test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/test/test_exchange_datetime_functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/theocean.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/therock.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/tidebit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/tidex.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/upbit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/vaultoro.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/vbtc.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/virwox.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/xbtce.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/yobit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/zaif.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/repos/ccxtLib/php/zb.php" beforeDir="false" />
+    </list>
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,8 +584,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="161">
               <caret line="152" column="40" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
+=======
+            <state relative-caret-position="228">
+              <caret line="145" selection-start-line="145" selection-end-line="145" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
             </state>
           </provider>
         </entry>
@@ -175,6 +628,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+<<<<<<< HEAD
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
         <option value="chicago-joe &lt;loss2@illinois.edu&gt;" />
@@ -184,6 +638,9 @@
   </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="f8ec4e84-cdea-4aad-b9b8-cbd75f26441e" />
+=======
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/repos/ccxtLib" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -228,6 +685,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
+<<<<<<< HEAD
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -235,12 +693,56 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+=======
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="cryptotrader" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\jloss\PyCharmProjects\cryptotrader" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="cryptotrader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cryptotrader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cryptotrader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="cryptotrader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Scratches" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+=======
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -423,6 +925,7 @@
       <workItem from="1563376518649" duration="7133000" />
       <workItem from="1563410948376" duration="763000" />
       <workItem from="1563511587013" duration="23000" />
+<<<<<<< HEAD
       <workItem from="1563511622784" duration="1058000" />
     </task>
     <task id="LOCAL-00001" summary="commit local repo&#10;1.18.916&#10;&#10;[ci skip]">
@@ -441,6 +944,16 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
+=======
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="43698000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4950249" weight="0.17517242" />
       <window_info id="Structure" order="1" sideWeight="0.50248754" weight="0.15694527" />
@@ -456,11 +969,19 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.5011924" side_tool="true" weight="0.42400622" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.50278217" side_tool="true" visible="true" weight="0.58988327" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.49717867" weight="0.32933652" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" show_stripe_button="false" weight="0.32969603" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.4972178" visible="true" weight="0.58988327" />
+=======
+      <window_info active="true" anchor="bottom" id="Event Log" order="11" sideWeight="0.5006896" side_tool="true" visible="true" weight="0.4287938" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" sideWeight="0.49717867" weight="0.32933652" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" show_stripe_button="false" weight="0.32969603" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49751243" side_tool="true" weight="0.15574263" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -505,6 +1026,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="VcsContentAnnotationSettings">
     <option name="myShow1" value="true" />
   </component>
@@ -519,6 +1041,10 @@
     </ignored-roots>
     <MESSAGE value="commit local repo&#10;1.18.916&#10;&#10;[ci skip]" />
     <option name="LAST_COMMIT_MESSAGE" value="commit local repo&#10;1.18.916&#10;&#10;[ci skip]" />
+=======
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/cryptotrader$theocean1.coverage" NAME="theocean1 Coverage Results" MODIFIED="1563025638365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/repos/ccxtLib/examples/py" />
@@ -762,8 +1288,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="161">
           <caret line="152" column="40" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
+=======
+        <state relative-caret-position="228">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+>>>>>>> 0047bb3a3e0a5a10e8629b10cba41f6d505972ab
         </state>
       </provider>
     </entry>
