@@ -108,3 +108,6 @@ venv.bak/
 /API_keys.py
 /requirements/
 local_history.patch
+.idea
+__pycache__
+.vscode
