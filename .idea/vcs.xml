@@ -7,9 +7,5 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/repos/catalystLib" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/repos/ccxtLib" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/repos/ccxtLib/build/ccxt.wiki" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/repos/peregrineLib" vcs="Git" />
   </component>
 </project>
