@@ -1,0 +1,19 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.autoComplete.extraPaths": [
+        "${env:SPARK_HOME}\\python",
+        "${env:SPARK_HOME}\\python\\pyspark"
+    ],
+    "python.pythonPath": "C:\\Users\\jloss\\venv\\ccxtenv\\Scripts\\python.exe",
+    "python.linting.flake8Enabled": false,
+    "terminal.integrated.fontSize": 11.5,
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.lineHeight": 0,
+    "terminal.integrated.rendererType": "canvas",
+    "terminal.integrated.inheritEnv": true,
+    // "terminal.integrated.shellArgs.windows": ["/K ipython"],
+    // "terminal.integrated.env.windows": {},
+    // "python.datas"
+
+}
