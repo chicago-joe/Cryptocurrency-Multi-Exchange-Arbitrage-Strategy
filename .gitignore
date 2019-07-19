@@ -105,9 +105,9 @@ venv.bak/
 .mypy_cache/
 /.vscode/
 /.idea/
-/API_keys.py
+/source/API_keys.py
 /requirements/
-local_history.patch
+misc/local_history.patch
 .idea
 __pycache__
 .vscode
