@@ -3,7 +3,8 @@
 import logging
 import time
 from pprint import *
-
+import numpy as np
+# import pandas as pd
 import ccxt  # noqa: E402
 
 from source import API_keys
@@ -13,6 +14,11 @@ from source import API_keys
 
 # Any Time Instantiation
 # enter your API public/secret keys here
+binance = ccxt.binance({
+        'enableRateLimit':True,
+})
+binance.apiKey = API_keys.binance.apiKey
+binance.secret = API_keys.binance.secret
 bitflyer = ccxt.bitflyer({
         'enableRateLimit':True,
 })
@@ -38,6 +44,16 @@ kraken = ccxt.kraken({
 })
 kraken.apiKey = API_keys.kraken.apiKey
 kraken.secret = API_keys.kraken.secret
+poloniex = ccxt.poloniex({
+        'enableRateLimit':True,
+})
+poloniex.apiKey = API_keys.poloniex.apiKey
+poloniex.secret = API_keys.poloniex.secret
+hitbtc2 = ccxt.hitbtc2({
+        'enableRateLimit':True,
+})
+hitbtc2.apiKey = API_keys.hitbtc2.apiKey
+hitbtc2.secret = API_keys.hitbtc2.secret
 
 
 def info():
@@ -57,12 +73,15 @@ def asyncio():
 
 # get a deposit address for BTC
 # address = client.get_deposit_address(asset='BTC')
-# list_of_exchanges = [bitflyer]
-# list_of_exchanges = [bittrex]
-list_of_exchanges = [bitflyer, bittrex,kraken,gemini]
-all_symbols = []
-my_symbols = ['BTC/USD']
 
+# list_of_exchanges = [bitflyer,bittrex,kraken,gemini,binance]
+list_of_exchanges = [bitflyer,bittrex,kraken,gemini]
+trades_executed = []
+trades_profit = []
+
+all_symbols = []
+
+my_symbols = ['BTC/USD']
 
 def initialize():  # set initial conditions for Bot
 
@@ -75,8 +94,7 @@ def initialize():  # set initial conditions for Bot
             print("\nEXCHANGE ID: ", exchange)
             print("STATUS: ", exchange.fetch_status())
             print("DEFAULT RATE LIMIT: ", exchange.rateLimit)
-            time.sleep(3)
-
+            time.sleep(2)
             list_of_symbols = []
             if i > 0:
                 break
@@ -117,10 +135,12 @@ def ActiveTrader(bidlist,asklist):
         asklist[i] = orderbook['asks'][0][0] if len(orderbook['asks']) > 0 else None
     if(oppo==1):
         opportunity(bidlist,asklist)
+
     return (bidlist,asklist)
 
+
 def opportunity(bidlist,asklist):
-    print('trying... commond this later')
+    print('searching for opportunities...')
 
     largestbit = -1
     lowestask = 999999999
@@ -134,20 +154,71 @@ def opportunity(bidlist,asklist):
         if asklist[i] < lowestask:
             lowestaskname = list_of_exchanges[i]
             lowestask = asklist[i]
-    if(largestbit>lowestask):
-        print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sale to ',largestbitname,' with $',largestbit)
 
+    spread = largestbit - lowestask
+    if(largestbit>lowestask):
+        print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',largestbit)
+        print('spread = %.5f'% spread)
+
+        if(spread > 10):
+            print('EXECUTE TRADE: spread is greater than $ 10 \n')
+            trades_executed.append(1)
+
+            default_trade_fees = 0.07
+            profit = spread * (default_trade_fees * spread)
+            trades_profit.append(profit)
+
+            print('\n--------- PERFORMANCE ANALYTICS ---------')
+            total_profit = np.sum(trades_profit)
+            total_trades = np.sum(trades_executed)
+            print('Total trades = ', total_trades)
+            print('Total profit = ', total_profit)
+            print(' ')
+
+        else:
+            pass
+
+    #     # print('Opportunity: BUY from ',str(lowestaskname).upper(),' with $',lowestask,' SELL to ',str(largestbitname).upper(),' with $',largestbit)
+    #     print('Opportunity: BUY from ',largestbitname,' with $',lowestask,' SELL on ',largestbitname,' with $',largestbit)
+    #     print('spread = ', spread)
 
     # for i in range(len(list_of_exchanges)):
     #     for j in range(len(list_of_exchanges)):
     #         if(bidlist[j]>asklist[i]):
     #             print('Opportunity: buy from ',list_of_exchanges[i],' with $',asklist[i],' sale to ',list_of_exchanges[j],' with $',bidlist[j])
 
+
+def execute_trade(bidlist, asklist):
+    print('EXECUTE TRADE: spread is greater than $ 10 \n')
+    trades_executed.append(1)
+
+    for i in range(len(list_of_exchanges)):
+        if bidlist[i] > largestbit:
+            largestbit = bidlist[i]
+        if asklist[i] < lowestask:
+            lowestask = asklist[i]
+    spread = largestbit - lowestask
+    default_trade_fees = 0.07
+    profit = spread * (default_trade_fees * spread)
+    trades_profit.append(profit)
+
+
+def performance_analytics():
+    print('--------- PERFORMANCE ANALYTICS ---------')
+    total_profit = np.sum(trades_profit)
+    total_trades = np.sum(trades_executed)
+    print('Total trades = ', total_trades)
+    print('Total profit = ', total_profit)
+    print('\n\n')
+
+
 def arbitrage():
     print("\n\nArbitrage Function ")
     coins = ['BTC']       # coins to arbitrage
     bidlist=[]
     asklist=[]
+
+
     for exchange in list_of_exchanges:
         symbols = exchange.load_markets()
         if symbols is None:
@@ -155,11 +226,11 @@ def arbitrage():
         elif len(symbols)<5:
             print("\n----------------\nMore Symbol Pairs Required\n----------------")
         else:
-            print("\n----------Exchange: ", exchange.id, "----------")
+            print("\n---------- Exchange: ", exchange.id, "----------")
 
         exchange_info = dir(exchange)
         # pprint(exchange_info)
-        print(exchange.symbols)
+        # print(exchange.symbols)
 
         # find currency pairs to trade
         pairs = []
@@ -167,8 +238,9 @@ def arbitrage():
             for symbol in coins:
                 if symbol in sym:
                     pairs.append(sym)
-        print(pairs)
-        time.sleep(3)
+        # do not remove:
+        # print("Potential Currency Pairs: \n", pairs,"\n")
+        # time.sleep(2)
 
 
         # from coin 1 to coin 2 - ETH/BTC - Bid
@@ -176,6 +248,7 @@ def arbitrage():
         # from coin 3 to coin 1 - BTC/LTC - Bid
         # arb_list = ['ETH/BTC','ETH/LTC','BTC/LTC']
         arb_list = ['BTC/USD']
+        # arb_list = ['BTC/USD','ETH/USD','ETH/BTC']
 
         # determine rates for our 3 currency pairs using order book
         i = 0
@@ -199,10 +272,10 @@ def arbitrage():
                 spread = (ask - bid) if (bid and ask) else None
                 data = (exchange.id, 'market price', {'bid': bid, 'ask': ask, 'spread': spread})
                 pprint(data)
-                print("\n\n")
+                # print("\n")
                 # depth = exchange.fetch_order_book(symbol=sym)
                 # pprint(depth)
-                time.sleep(3)
+                time.sleep(0.5)
                 # exch_rate_list.append(depth(['bids'][0][0]))
     return (bidlist,asklist)
 
@@ -210,21 +283,16 @@ def arbitrage():
 def run():
 
     # info()
-
-    initialize()
-    
+    # initialize()
     # diversify()
 
-
     (bidlist,asklist)=arbitrage()
-    portfolio = 10  # BTC
 
-
+    # portfolio = 10  # BTC
 
     while 1:
         # active trader - 'scalping', swing trading, arbitrage
         ActiveTrader(bidlist,asklist)
 
-
-
 run()
+
