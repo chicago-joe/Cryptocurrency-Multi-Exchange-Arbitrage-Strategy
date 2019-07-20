@@ -59,7 +59,7 @@ def asyncio():
 # address = client.get_deposit_address(asset='BTC')
 # list_of_exchanges = [bitflyer]
 # list_of_exchanges = [bittrex]
-list_of_exchanges = [bitflyer, bittrex]
+list_of_exchanges = [bitflyer, bittrex,kraken,gemini]
 all_symbols = []
 my_symbols = ['BTC/USD']
 
@@ -121,10 +121,27 @@ def ActiveTrader(bidlist,asklist):
 
 def opportunity(bidlist,asklist):
     print('trying... commond this later')
+
+    largestbit = -1
+    lowestask = 999999999
+    largestbitname = ''
+    lowestaskname = ''
+
     for i in range(len(list_of_exchanges)):
-        for j in range(len(list_of_exchanges)):
-            if(bidlist[j]>asklist[i]):
-                print('Opportunity: buy from ',list_of_exchanges[i],' with $',asklist[i],' sale to ',list_of_exchanges[j],' with $',bidlist[j])
+        if bidlist[i] > largestbit:
+            largestbitname = list_of_exchanges[i]
+            largestbit = bidlist[i]
+        if asklist[i] < lowestask:
+            lowestaskname = list_of_exchanges[i]
+            lowestask = asklist[i]
+    if(largestbit>lowestask):
+        print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sale to ',largestbitname,' with $',largestbit)
+
+
+    # for i in range(len(list_of_exchanges)):
+    #     for j in range(len(list_of_exchanges)):
+    #         if(bidlist[j]>asklist[i]):
+    #             print('Opportunity: buy from ',list_of_exchanges[i],' with $',asklist[i],' sale to ',list_of_exchanges[j],' with $',bidlist[j])
 
 def arbitrage():
     print("\n\nArbitrage Function ")
