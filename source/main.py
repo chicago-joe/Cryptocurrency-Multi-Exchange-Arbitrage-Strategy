@@ -189,8 +189,13 @@ def opportunity(bidlist,asklist):
             fee += bitfee['taker']
         print('total fee = %.5f'%fee)
         print('ask cost = %.5f'%askcost)
-        print('bit cost = %.5f'%bitcost)
+        print('bit cost = %.5f\n'%bitcost)
         if(pricediff > fee):
+            print(' \n')
+            print(' \n')
+            print(' \n')
+            print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
+            print('!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!')
             print('EXECUTE TRADE: payoff is greater than $ fee \n')
             trades_executed.append(1)
 
@@ -202,7 +207,7 @@ def opportunity(bidlist,asklist):
             total_trades = np.sum(trades_executed)
             print('Total trades = ', total_trades)
             print('Total profit = ', total_profit)
-            print(' ')
+            print(' \n')
 
         else:
             pass
