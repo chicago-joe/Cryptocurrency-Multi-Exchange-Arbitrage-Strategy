@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
+
 import os
 import sys
-
 root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 sys.path.append(root + '/python')
 
@@ -59,7 +60,7 @@ proxies = [
 
 if len(sys.argv) > 2:
     ids = list(sys.argv[1:])
-    exchanges = {'bitflyer','bittrex','coinbase','gemini','kraken'}
+    exchanges = {}
     dump(ids)
     dump(yellow(' '.join(ids)))
     for id in ids:  # load all markets from all exchange exchanges
@@ -129,4 +130,3 @@ if len(sys.argv) > 2:
 
 else:
     print_usage()
-    print_exchanges()
