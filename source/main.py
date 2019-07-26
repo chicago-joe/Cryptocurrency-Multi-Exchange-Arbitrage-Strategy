@@ -321,6 +321,7 @@ def run():
     # initialize()
 
     # diversify()
+
     #print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
     #get_funding_fees()
     #print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
