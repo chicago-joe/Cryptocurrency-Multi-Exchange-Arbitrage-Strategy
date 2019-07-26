@@ -117,13 +117,15 @@ def opportunity(bidlist,asklist):
             askvol=asklist[i][1]
 
     spread = largestbit - lowestask
-
+    askcost=0
+    bitcost=0
     if(largestbit>lowestask):
 
         if bidvol>askvol:
             print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',largestbit ,' * ',askvol)
             print('spread = %.5f'% spread)
-
+            askcost+=askvol*lowestask
+            bitcost+=askvol*largestbit
             pricediff=spread*askvol
             orderbook=lowestaskname.fetch_order_book(symbol='BTC/USD')
             for i in range(len(orderbook['asks'])):
@@ -133,18 +135,23 @@ def opportunity(bidlist,asklist):
                             print('buy from ',lowestaskname,' with $',orderbook['asks'][i][0],' sell to ',largestbitname,' with $',largestbit ,' * ',bidvol-askvol)
                             print('spread = %.5f'% (largestbit-orderbook['asks'][i][0]))
                             pricediff+=(largestbit-orderbook['asks'][i][0])*(bidvol-askvol)
+                            askcost+=(bidvol-askvol)*orderbook['asks'][i][0]
+                            bitcost+=(bidvol-askvol)*largestbit
                             break
                         else:
                             print('buy from ',lowestaskname,' with $',orderbook['asks'][i][0],' sell to ',largestbitname,' with $',largestbit ,' * ',orderbook['asks'][i][1])
                             print('spread = %.5f'% (largestbit-orderbook['asks'][i][0]))
                             askvol+=orderbook['asks'][i][1]
                             pricediff+=(largestbit-orderbook['asks'][i][0])*orderbook['asks'][i][1]
+                            askcost+=orderbook['asks'][i][1]*orderbook['asks'][i][0]
+                            bitcost+=orderbook['asks'][i][1]*largestbit
                     else:
                         break
         else:
             print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',largestbit ,' * ',bidvol)
             print('spread = %.5f'% spread)
-
+            askcost+=bidvol*lowestask
+            bitcost+=bidvol*largestbit
             pricediff=spread*bidvol
             orderbook=largestbitname.fetch_order_book(symbol='BTC/USD')
             for i in range(len(orderbook['bids'])):
@@ -154,22 +161,40 @@ def opportunity(bidlist,asklist):
                             print('buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',orderbook['bids'][i][0] ,' * ',askvol-bidvol)
                             print('spread = %.5f'% (orderbook['bids'][i][0]-lowestask))
                             pricediff+=(orderbook['bids'][i][0]-lowestask)*(askvol-bidvol)
+                            askcost+=(askvol-bidvol)*lowestask
+                            bitcost+=(askvol-bidvol)*orderbook['bids'][i][0]
                             break
                         else:
                             print('buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',orderbook['bids'][i][0] ,' * ',orderbook['bids'][i][1])
                             print('spread = %.5f'% (orderbook['bids'][i][0]-lowestask))
                             bidvol+=orderbook['bids'][i][1]
                             pricediff+=(orderbook['bids'][i][0]-lowestask)*orderbook['bids'][i][1]
+                            askcost+=(orderbook['bids'][i][1])*lowestask
+                            bitcost+=(orderbook['bids'][i][1])*orderbook['bids'][i][0]
                     else:
                         break
-        print('pricediff = %.5f\n'% pricediff)
-
-        if(spread > 10):
-            print('EXECUTE TRADE: spread is greater than $ 10 \n')
+        print('pricediff = %.5f'% pricediff)
+        askfee=lowestaskname.fees.get('trading')
+        bitfee=largestbitname.fees.get('trading')
+        print('taker fee = %.5f'%askfee['taker'])
+        print('maker fee = %.5f'%bitfee['maker'])
+        fee=0
+        if askfee['percentage']:
+            fee += askfee['taker']*askcost
+        else:
+            fee +=askfee['taker']
+        if bitfee['percentage']:
+            fee += bitfee['taker']*bitcost
+        else:
+            fee += bitfee['taker']
+        print('total fee = %.5f'%fee)
+        print('ask cost = %.5f'%askcost)
+        print('bit cost = %.5f'%bitcost)
+        if(pricediff > fee):
+            print('EXECUTE TRADE: payoff is greater than $ fee \n')
             trades_executed.append(1)
 
-            default_trade_fees = 0.05
-            profit = spread * (default_trade_fees * spread)
+            profit = pricediff - fee
             trades_profit.append(profit)
 
             print('\n--------- PERFORMANCE ANALYTICS ---------')
@@ -181,7 +206,7 @@ def opportunity(bidlist,asklist):
 
         else:
             pass
-
+    time.sleep(5)
     #     # print('Opportunity: BUY from ',str(lowestaskname).upper(),' with $',lowestask,' SELL to ',str(largestbitname).upper(),' with $',largestbit)
     #     print('Opportunity: BUY from ',largestbitname,' with $',lowestask,' SELL on ',largestbitname,' with $',largestbit)
     #     print('spread = ', spread)
@@ -291,6 +316,10 @@ def run():
     # initialize()
 
     # diversify()
+    #print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
+    #get_funding_fees()
+    #print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
+    #get_trading_fees()
 
     (bidlist,asklist)=arbitrage()
 
@@ -302,9 +331,6 @@ def run():
 
 
 
-print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
-get_funding_fees()
-print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
-get_trading_fees()
 
-# run()
+
+run()
