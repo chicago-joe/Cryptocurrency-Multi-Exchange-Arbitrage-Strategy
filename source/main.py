@@ -1,5 +1,6 @@
 from source.init_exchanges import *
 import ccxt  # noqa: E402
+from source.exchange_fees import get_funding_fees, get_trading_fees
 import time
 import numpy as np
 from pprint import pprint
@@ -167,7 +168,7 @@ def opportunity(bidlist,asklist):
             print('EXECUTE TRADE: spread is greater than $ 10 \n')
             trades_executed.append(1)
 
-            default_trade_fees = 0.07
+            default_trade_fees = 0.05
             profit = spread * (default_trade_fees * spread)
             trades_profit.append(profit)
 
@@ -201,7 +202,7 @@ def execute_trade(bidlist, asklist):
         if asklist[i] < lowestask:
             lowestask = asklist[i]
     spread = largestbit - lowestask
-    default_trade_fees = 0.07
+    default_trade_fees = 0.05
     profit = spread * (default_trade_fees * spread)
     trades_profit.append(profit)
 
@@ -300,5 +301,10 @@ def run():
         ActiveTrader(bidlist,asklist)
 
 
-run()
 
+print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
+get_funding_fees()
+print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
+get_trading_fees()
+
+# run()
