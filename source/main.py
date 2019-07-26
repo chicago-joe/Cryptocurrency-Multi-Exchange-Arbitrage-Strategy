@@ -123,16 +123,16 @@ def ActiveTrader(bidlist,asklist):
     arb_list = ['BTC/USD']
     for i in range(len(list_of_exchanges)):
         orderbook=list_of_exchanges[i].fetch_order_book(symbol=arb_list[0])
-        if(bidlist[i] != orderbook['bids'][0][0] if len(orderbook['bids']) > 0 else None):
+        if(bidlist[i] != orderbook['bids'][0] if len(orderbook['bids']) > 0 else None):
             oppo=1
             # print(bidlist[i])
             # print( orderbook['bids'][0][0] if len(orderbook['bids']) > 0 else None)
-        if(asklist[i] != orderbook['asks'][0][0] if len(orderbook['asks']) > 0 else None):
+        if(asklist[i] != orderbook['asks'][0] if len(orderbook['asks']) > 0 else None):
             oppo=1
             # print(asklist[i])
             # print(orderbook['asks'][0][0] if len(orderbook['asks']) > 0 else None)
-        bidlist[i] = orderbook['bids'][0][0] if len(orderbook['bids']) > 0 else None
-        asklist[i] = orderbook['asks'][0][0] if len(orderbook['asks']) > 0 else None
+        bidlist[i] = orderbook['bids'][0] if len(orderbook['bids']) > 0 else None
+        asklist[i] = orderbook['asks'][0] if len(orderbook['asks']) > 0 else None
     if(oppo==1):
         opportunity(bidlist,asklist)
 
@@ -146,19 +146,66 @@ def opportunity(bidlist,asklist):
     lowestask = 999999999
     largestbitname = ''
     lowestaskname = ''
+    bidvol=0
+    askvol=0
 
     for i in range(len(list_of_exchanges)):
-        if bidlist[i] > largestbit:
+        if bidlist[i][0] > largestbit:
             largestbitname = list_of_exchanges[i]
-            largestbit = bidlist[i]
-        if asklist[i] < lowestask:
+            largestbit = bidlist[i][0]
+            bidvol=bidlist[i][1]
+        if asklist[i][0] < lowestask:
             lowestaskname = list_of_exchanges[i]
-            lowestask = asklist[i]
+            lowestask = asklist[i][0]
+            askvol=asklist[i][1]
 
     spread = largestbit - lowestask
+
     if(largestbit>lowestask):
-        print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',largestbit)
-        print('spread = %.5f'% spread)
+
+        if bidvol>askvol:
+            print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',largestbit ,' * ',askvol)
+            print('spread = %.5f'% spread)
+
+            pricediff=spread*askvol
+            orderbook=lowestaskname.fetch_order_book(symbol='BTC/USD')
+            for i in range(len(orderbook['asks'])):
+                if(i!=0):
+                    if largestbit>orderbook['asks'][i][0]:
+                        if(askvol+orderbook['asks'][i][1]>=bidvol):
+                            print('buy from ',lowestaskname,' with $',orderbook['asks'][i][0],' sell to ',largestbitname,' with $',largestbit ,' * ',bidvol-askvol)
+                            print('spread = %.5f'% (largestbit-orderbook['asks'][i][0]))
+                            pricediff+=(largestbit-orderbook['asks'][i][0])*(bidvol-askvol)
+                            break
+                        else:
+                            print('buy from ',lowestaskname,' with $',orderbook['asks'][i][0],' sell to ',largestbitname,' with $',largestbit ,' * ',orderbook['asks'][i][1])
+                            print('spread = %.5f'% (largestbit-orderbook['asks'][i][0]))
+                            askvol+=orderbook['asks'][i][1]
+                            pricediff+=(largestbit-orderbook['asks'][i][0])*orderbook['asks'][i][1]
+                    else:
+                        break
+        else:
+            print('Opportunity: buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',largestbit ,' * ',bidvol)
+            print('spread = %.5f'% spread)
+
+            pricediff=spread*bidvol
+            orderbook=largestbitname.fetch_order_book(symbol='BTC/USD')
+            for i in range(len(orderbook['bids'])):
+                if(i!=0):
+                    if orderbook['bids'][i][0]>lowestask:
+                        if(bidvol+orderbook['bids'][i][1]>=askvol):
+                            print('buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',orderbook['bids'][i][0] ,' * ',askvol-bidvol)
+                            print('spread = %.5f'% (orderbook['bids'][i][0]-lowestask))
+                            pricediff+=(orderbook['bids'][i][0]-lowestask)*(askvol-bidvol)
+                            break
+                        else:
+                            print('buy from ',lowestaskname,' with $',lowestask,' sell to ',largestbitname,' with $',orderbook['bids'][i][0] ,' * ',orderbook['bids'][i][1])
+                            print('spread = %.5f'% (orderbook['bids'][i][0]-lowestask))
+                            bidvol+=orderbook['bids'][i][1]
+                            pricediff+=(orderbook['bids'][i][0]-lowestask)*orderbook['bids'][i][1]
+                    else:
+                        break
+        print('pricediff = %.5f\n'% pricediff)
 
         if(spread > 10):
             print('EXECUTE TRADE: spread is greater than $ 10 \n')
