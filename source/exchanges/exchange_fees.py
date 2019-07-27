@@ -1,4 +1,4 @@
-from source.init_exchanges import *
+from exchanges.init_exchanges import *
 from pprint import pprint
 import time
 # import os, sys
@@ -17,9 +17,9 @@ def get_trading_fees(list_of_exchanges):
         pprint(exchange.fees.get('trading'))
         print('\n')
 
-        # HELP: put in Numpy array to access each exchange fee as variable?
-        # fees = exchange.fees.get('funding')
-        # funding_fees.append(exchange)
+        # HELP: put in Numpy array to access each exchanges fee as variable?
+        # fees = exchanges.fees.get('funding')
+        # funding_fees.append(exchanges)
 
         time.sleep(3)
 
@@ -34,9 +34,9 @@ def get_funding_fees(list_of_exchanges):
         pprint(exchange.fees.get('funding'))
         print('\n')
 
-        # HELP: put in Numpy array to access each exchange fee as variable?
-        # fees = exchange.fees.get('funding')
-        # funding_fees.append(exchange)
+        # HELP: put in Numpy array to access each exchanges fee as variable?
+        # fees = exchanges.fees.get('funding')
+        # funding_fees.append(exchanges)
 
         time.sleep(3)
 

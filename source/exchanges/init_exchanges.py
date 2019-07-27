@@ -1,5 +1,5 @@
-from source import API_keys
 import ccxt  # noqa: E402
+from source import API_keys
 
 
 # 'Any Time' CryptoExchange Instantiation
@@ -46,8 +46,8 @@ coinbase.secret = API_keys.coinbase.secret
 #         'enableRateLimit':True,
 # })
 # # enter your API public/secret keys here:
-# coindeal.apiKey = API_keys.coindeal.apiKey
-# coindeal.secret = API_keys.coindeal.secret
+# coindeal.apiKey = my_API_keys.coindeal.apiKey
+# coindeal.secret = my_API_keys.coindeal.secret
 
 
 gemini = ccxt.gemini({

@@ -25,14 +25,14 @@ exchange = getattr(ccxt, exchange_id)({
 
     # 'verbose': True, // ←- uncomment this for verbose output
 
-    # additional credentials might be required in exchange-specific cases:
+    # additional credentials might be required in exchanges-specific cases:
     # uid or password for GDAX, etc...
 })
 
 # -----------------------------------------------------------------------------
 
 if not exchange.has['fetchDepositAddress']:
-    print('The exchange does not support fetchDepositAddress() yet')
+    print('The exchanges does not support fetchDepositAddress() yet')
     sys.exit()
 
 # -----------------------------------------------------------------------------
@@ -82,7 +82,7 @@ except ccxt.InvalidAddress as e:
 
     else:
 
-        print('The exchange does not support createDepositAddress()')
+        print('The exchanges does not support createDepositAddress()')
 
 except Exception as e:
 

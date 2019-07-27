@@ -63,15 +63,15 @@ if len(sys.argv) > 2:
     exchanges = {}
     dump(ids)
     dump(yellow(' '.join(ids)))
-    for id in ids:  # load all markets from all exchange exchanges
+    for id in ids:  # load all markets from all exchanges exchanges
 
-        # instantiate the exchange by id
+        # instantiate the exchanges by id
         exchange = getattr(ccxt, id)()
 
         # save it in a dictionary under its id for future use
         exchanges[id] = exchange
 
-        # load all markets from the exchange
+        # load all markets from the exchanges
         markets = exchange.load_markets()
 
         # basic round-robin proxy scheduler
@@ -83,7 +83,7 @@ if len(sys.argv) > 2:
             # try proxies in round-robin fashion
             currentProxy = (currentProxy + 1) % len(proxies)
 
-            try:  # try to load exchange markets using current proxy
+            try:  # try to load exchanges markets using current proxy
 
                 exchange.proxy = proxies[currentProxy]
                 exchange.load_markets()
@@ -124,7 +124,7 @@ if len(sys.argv) > 2:
         string = ' {:<15} | '.format(symbol)
         row = {}
         for id in ids:
-            # if a symbol is present on a exchange print that exchange's id in the row
+            # if a symbol is present on a exchanges print that exchanges's id in the row
             string += ' {:<15} | '.format(id if symbol in exchanges[id].symbols else '')
         dump(string)
 

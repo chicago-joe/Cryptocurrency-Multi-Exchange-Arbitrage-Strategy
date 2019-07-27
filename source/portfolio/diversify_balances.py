@@ -11,12 +11,12 @@ from pprint import pprint
 
 
 def diversify():
-    # collect all balances across exchange into wallets
+    # collect all balances across exchanges into wallets
     # then diversify into specific amounts
     # ex: 50% btc, 5% each of 8 next-top coins, 10x 1% of micro-caps
     for exchange in list_of_exchanges:
         print("\nExchange Balances: ")
         pprint(exchange.fetch_balance())
         time.sleep(3)
-        # print(exchange.fetch_deposit_address('USD'))
+        # print(exchanges.fetch_deposit_address('USD'))
         # pprint(bitflyer.load_markets())

@@ -1,10 +1,11 @@
-from exchange_fees import get_trading_fees, get_funding_fees
-from source import API_keys
-from source.init_exchanges import *
 import ccxt
 import time
-from pprint import pprint
+from exchanges import exchange_fees
+from exchanges.init_exchanges import *
+# from exchange_fees import get_trading_fees, get_funding_fees
+from source import API_keys
 import numpy as np
+from pprint import pprint
 
 # import os, sys
 # root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -36,10 +37,10 @@ def initialize():  # set initial conditions for Bot
             print("DEFAULT RATE LIMIT: ", exchange.rateLimit)
             time.sleep(2)
 
-    # pull exchange information here:
-            # exchange_info = dir(exchange)
-            # pprint(exchange_info)
-            # print(exchange.symbols)
+    # pull exchanges information here:
+            # exchanges = dir(exchanges)
+            # pprint(exchanges)
+            # print(exchanges.symbols)
 
             if i > 0:
                 break

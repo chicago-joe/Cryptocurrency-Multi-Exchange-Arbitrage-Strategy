@@ -1,10 +1,9 @@
-from source.init_exchanges import *
-import time
+from exchanges.init_exchanges import *
 from pprint import pprint
-import time
 from pprint import pprint
 
-from source.init_exchanges import *
+from exchanges.init_exchanges import *
+
 
 # import os, sys
 # root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -12,3 +11,9 @@ from source.init_exchanges import *
 
 # import logging
 # logging.basicConfig(level = logging.DEBUG)
+
+
+def get_info():
+    pprint(dir(ccxt.gemini()))
+    # pprint(exchanges)
+    # print(exchanges.symbols)

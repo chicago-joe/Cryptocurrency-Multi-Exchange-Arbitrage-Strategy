@@ -74,18 +74,18 @@ def print_ticker(exchange, symbol):
 
 try:
 
-    id = sys.argv[1]  # get exchange id from command line arguments
+    id = sys.argv[1]  # get exchanges id from command line arguments
 
-    # check if the exchange is supported by ccxt
+    # check if the exchanges is supported by ccxt
     exchange_found = id in ccxt.exchanges
 
     if exchange_found:
         dump('Instantiating', green(id))
 
-        # instantiate the exchange by id
+        # instantiate the exchanges by id
         exchange = getattr(ccxt, id)()
 
-        # load all markets from the exchange
+        # load all markets from the exchanges
         markets = exchange.load_markets()
 
         # output all symbols
