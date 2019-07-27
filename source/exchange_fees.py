@@ -1,8 +1,14 @@
-from source import API_keys
 from source.init_exchanges import *
 from pprint import pprint
-import ccxt
 import time
+
+
+# import os, sys
+# root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# sys.path.append(root + '/python')
+
+# import logging
+# logging.basicConfig(level = logging.DEBUG)
 
 
 def get_trading_fees():
