@@ -1,10 +1,10 @@
+from exchange_fees import get_trading_fees, get_funding_fees
 from source import API_keys
 from source.init_exchanges import *
 import ccxt
 import time
 from pprint import pprint
 import numpy as np
-
 
 # import os, sys
 # root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -14,7 +14,7 @@ import numpy as np
 # logging.basicConfig(level = logging.DEBUG)
 
 
-list_of_exchanges = [bitflyer, bittrex, kraken, gemini]
+list_of_exchanges = [bittrex, bitflyer, bitfinex, liquid, poloniex, hitbtc, coinbase, kraken, gemini]
 trades_executed = []
 trades_profit = []
 all_symbols = []
@@ -224,7 +224,7 @@ def arbitrage():
         exchange_info = dir(exchange)
         # pprint(exchange_info)
         # print(exchange.symbols)
-
+        # ccxt.coin
         # find currency pairs to trade
         pairs = []
         for sym in symbols:
@@ -282,15 +282,15 @@ def run():
     # diversify()
 
     # print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
-    # get_funding_fees()
-
+    # get_funding_fees(list_of_exchanges)
     # print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
-    # get_trading_fees()
+    # get_trading_fees(list_of_exchanges)
 
     (bidlist, asklist) = arbitrage()
+
     # portfolio = 10  # BTC
     while 1:
         ActiveTrader(bidlist, asklist)
 
 
-run()
+# run()

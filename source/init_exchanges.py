@@ -18,6 +18,13 @@ bitflyer = ccxt.bitflyer({
 bitflyer.apiKey = API_keys.bitflyer.apiKey
 bitflyer.secret = API_keys.bitflyer.secret
 
+bitfinex = ccxt.bitfinex({
+        'enableRateLimit':True,
+})
+# enter your API public/secret keys here:
+bitfinex.apiKey = API_keys.bitfinex.apiKey
+bitfinex.secret = API_keys.bitfinex.secret
+
 
 bittrex = ccxt.bittrex({
         'enableRateLimit':True,
@@ -34,6 +41,14 @@ coinbase = ccxt.coinbase({
 coinbase.apiKey = API_keys.coinbase.apiKey
 coinbase.secret = API_keys.coinbase.secret
 
+#
+# coindeal = ccxt.coindeal({
+#         'enableRateLimit':True,
+# })
+# # enter your API public/secret keys here:
+# coindeal.apiKey = API_keys.coindeal.apiKey
+# coindeal.secret = API_keys.coindeal.secret
+
 
 gemini = ccxt.gemini({
         'enableRateLimit':True,
@@ -41,6 +56,13 @@ gemini = ccxt.gemini({
 # enter your API public/secret keys here:
 gemini.apiKey = API_keys.gemini.apiKey
 gemini.secret = API_keys.gemini.secret
+
+hitbtc = ccxt.hitbtc({
+        'enableRateLimit':True,
+})
+# enter your API public/secret keys here:
+hitbtc.apiKey = API_keys.hitbtc.apiKey
+hitbtc.secret = API_keys.hitbtc.secret
 
 
 kraken = ccxt.kraken({
@@ -50,6 +72,13 @@ kraken = ccxt.kraken({
 kraken.apiKey = API_keys.kraken.apiKey
 kraken.secret = API_keys.kraken.secret
 
+liquid = ccxt.liquid({
+        'enableRateLimit':True,
+})
+# enter your API public/secret keys here:
+liquid.apiKey = API_keys.liquid.apiKey
+liquid.secret = API_keys.liquid.secret
+
 
 poloniex = ccxt.poloniex({
         'enableRateLimit':True,
@@ -57,12 +86,3 @@ poloniex = ccxt.poloniex({
 # enter your API public/secret keys here:
 poloniex.apiKey = API_keys.poloniex.apiKey
 poloniex.secret = API_keys.poloniex.secret
-
-
-hitbtc2 = ccxt.hitbtc2({
-        'enableRateLimit':True,
-})
-# enter your API public/secret keys here:
-hitbtc2.apiKey = API_keys.hitbtc2.apiKey
-hitbtc2.secret = API_keys.hitbtc2.secret
-

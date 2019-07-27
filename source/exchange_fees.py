@@ -11,9 +11,9 @@ import time
 # logging.basicConfig(level = logging.DEBUG)
 
 
-def get_trading_fees():
-    exchanges = [bitflyer, bittrex, kraken, gemini]
-    for exchange in exchanges:
+def get_trading_fees(list_of_exchanges):
+    # exchanges = [bitflyer, bittrex, kraken, gemini]
+    for exchange in list_of_exchanges:
         print('EXCHANGE ID: ',exchange.id)
         print('TRADING FEES: ')
         pprint(exchange.fees.get('trading'))
@@ -28,9 +28,9 @@ def get_trading_fees():
     return
 
 
-def get_funding_fees():
-    exchanges = [bitflyer, bittrex, kraken, gemini]
-    for exchange in exchanges:
+def get_funding_fees(list_of_exchanges):
+    # exchanges = [bitflyer, bittrex, kraken, gemini]
+    for exchange in list_of_exchanges:
         # print('\n')
         print('EXCHANGE ID: ',exchange.id)
         print('FUNDING FEES: ')
