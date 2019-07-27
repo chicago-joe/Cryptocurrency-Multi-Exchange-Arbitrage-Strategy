@@ -1,5 +1,5 @@
-from source.init_exchanges import *
 import ccxt  # noqa: E402
+from source.init_exchanges import *
 from source.exchange_fees import get_funding_fees, get_trading_fees
 import time
 import numpy as np
