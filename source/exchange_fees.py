@@ -1,8 +1,6 @@
 from source.init_exchanges import *
 from pprint import pprint
 import time
-
-
 # import os, sys
 # root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 # sys.path.append(root + '/python')
@@ -29,7 +27,6 @@ def get_trading_fees(list_of_exchanges):
 
 
 def get_funding_fees(list_of_exchanges):
-    # exchanges = [bitflyer, bittrex, kraken, gemini]
     for exchange in list_of_exchanges:
         # print('\n')
         print('EXCHANGE ID: ',exchange.id)
@@ -44,4 +41,3 @@ def get_funding_fees(list_of_exchanges):
         time.sleep(3)
 
     return
-
