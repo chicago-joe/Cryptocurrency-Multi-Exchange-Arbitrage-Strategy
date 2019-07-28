@@ -1,8 +1,7 @@
 import ccxt
 import time
-from exchanges import exchange_fees
 from exchanges.init_exchanges import *
-# from exchange_fees import get_trading_fees, get_funding_fees
+from exchanges.exchange_fees import get_trading_fees, get_funding_fees
 from source import API_keys
 import numpy as np
 from pprint import pprint
@@ -266,11 +265,11 @@ def run():
     # initialize()
     # diversify()
 
-    # print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
-    # get_funding_fees(list_of_exchanges)
+    print("\n\n---------- EXCHANGE FUNDING FEES ----------\n")
+    get_funding_fees(list_of_exchanges)
 
-    # print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
-    # get_trading_fees(list_of_exchanges)
+    print("\n\n---------- EXCHANGE TRADING FEES ----------\n")
+    get_trading_fees(list_of_exchanges)
 
     (bid_price_list, ask_price_list) = arbitrage()
     # portfolio = 10  # BTC

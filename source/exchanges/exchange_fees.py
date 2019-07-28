@@ -14,7 +14,7 @@ def get_trading_fees(list_of_exchanges):
     for exchange in list_of_exchanges:
         print('EXCHANGE ID: ',exchange.id)
         print('TRADING FEES: ')
-        pprint(exchange.fees.get('trading'))
+        print(exchange.fees.get('trading'))
         print('\n')
 
         # HELP: put in Numpy array to access each exchanges fee as variable?
@@ -31,7 +31,7 @@ def get_funding_fees(list_of_exchanges):
         # print('\n')
         print('EXCHANGE ID: ',exchange.id)
         print('FUNDING FEES: ')
-        pprint(exchange.fees.get('funding'))
+        print(exchange.fees.get('funding'))
         print('\n')
 
         # HELP: put in Numpy array to access each exchanges fee as variable?
